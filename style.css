@@ -19,9 +19,10 @@ header{
 
 .logo img{
     display: inline-block;
-    width: 20%;
-    margin-left: 20px;
-    padding: 20px;
+    width: 24%;
+    flex-grow: 2;
+    margin-left: 200px;
+    padding: 15px;
 }
 
 .menu-topo ul{
@@ -29,7 +30,7 @@ header{
     justify-content: space-around;
 }
 .menu-topo ul li{
-    margin-right: 30px;  
+    margin-right: 35px;  
     list-style: none;
 }
 .menu-topo a{
@@ -39,6 +40,7 @@ header{
     font-size: 1.3em;
     font-weight: 400;
     font-family: 'roboto';
+    transition: .3s;
 }
 .menu-topo a:hover{
     text-decoration: underline;
@@ -51,25 +53,31 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
-    height:500px ;
+    height:550px ;
 }
 
 .banner h2{
     color: white;
     font-family: 'roboto';
     position: absolute;
-    bottom: 100px;
+    bottom: 250px;
     left: 150px;
 }
 
 .banner a{
     background-color: var(--cor01);
-    padding: 5px 30px;
+    padding: 8px 30px;
     border-radius: 120px;
     text-decoration: none;
     color: white;
     position: absolute;
-    bottom: 50px;
-    left: 150px;
+    bottom: 180px;
+    left: 210px;
+    transition: .2s;
+}
+
+.banner a:hover{
+    background-color: #018e4894;
+    color: rgba(255, 255, 255, 0.541);
 }
 
