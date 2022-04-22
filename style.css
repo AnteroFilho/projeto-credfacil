@@ -46,7 +46,8 @@ header{
 }
 
 .banner{
-    background-image: url(img/pexels-cottonbro-6158670.jpg);
+    background-color: #ccc;
+    background-image: url(img/banner-pq.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
