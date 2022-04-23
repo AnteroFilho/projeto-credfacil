@@ -52,6 +52,7 @@ header{
     background-repeat: no-repeat;
     background-position: center bottom;
     height:600px ;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .banner h2{
     color: white;
@@ -59,6 +60,7 @@ header{
     position: absolute;
     bottom: 250px;
     margin-left: 10%;
+    font-size: 2em;
 }
 .button{
     padding: 8px 30px;
@@ -90,6 +92,7 @@ header{
 }
 .produtos{
     background-color: #ccc;    
+    
 }
 .produtos h2{
     font-family: Arial, Helvetica, sans-serif;
@@ -117,6 +120,22 @@ header{
     justify-content: space-around;
     flex-wrap: wrap;
 }
+.oferta a{    
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: rgb(100, 99, 99);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    transition: .6s;
+}
+.oferta a:hover{
+    text-decoration: underline;
+    background-color: var(--cor01);
+    color: white;
+}
 #big{
     font-size: 3em;
     font-family: Arial, Helvetica, sans-serif;
@@ -130,11 +149,12 @@ header{
     font-size: 1.2em;   
     font-family: Arial, Helvetica, sans-serif; 
     color: rgb(100, 99, 99);
+    margin-bottom: 10px;
 }
 .oferta img{
     width: 500px;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 30px;    
 }
 
 .consignado{
@@ -171,7 +191,7 @@ header{
 }
 
 .fgts img{
-    width: 500px;
+    width: 500px;    
 }
 .fgts p{
     width: 500px;
