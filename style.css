@@ -1,10 +1,8 @@
 @charset "UTF-8";
-
 :root{
     --cor01:#018e48;
     --cor2:#f0821f;
 }
-
 *{
     margin: 0;
     padding: 0;
@@ -16,15 +14,13 @@ header{
     justify-content: space-between;
 
 }
-
 .logo img{
     display: inline-block;
-    width: 24%;
-    flex-grow: 2;
-    margin-left: 200px;
+    width: 100px;
+    flex-grow: 1;
+    margin-left: 50%;
     padding: 15px;
 }
-
 .menu-topo ul{
     display: flex;
     justify-content: space-around;
@@ -46,7 +42,6 @@ header{
     text-decoration: underline;
     color: var(--cor01);
 }
-
 .banner{
     background-color: #ccc;
     background-image: url(img/banner-pq.jpg);
@@ -55,29 +50,60 @@ header{
     background-position: center bottom;
     height:600px ;
 }
-
 .banner h2{
     color: white;
     font-family: 'roboto';
     position: absolute;
     bottom: 250px;
-    left: 150px;
+    margin-left: 10%;
 }
-
-.banner a{
-    background-color: var(--cor01);
+.button{
     padding: 8px 30px;
     border-radius: 120px;
     text-decoration: none;
-    color: white;
-    position: absolute;
-    bottom: 180px;
-    left: 210px;
+    color: white;    
+    margin-left: 15%;
     transition: .2s;
 }
-
-.banner a:hover{
+.button-verde{
+    background-color: var(--cor01); 
+}
+.banner-b{
+    position: absolute;
+    bottom: 180px;
+}
+.button-laranja{
+    background-color: var(--cor2); 
+    margin: 40px 5%;   
+    font-size: 1.2em;
+}
+.button-laranja:hover{
+    background-color: #f0801fb0;
+    color: rgba(255, 255, 255, 0.534);
+}
+.banner-b:hover{
     background-color: #018e4894;
     color: rgba(255, 255, 255, 0.541);
+}
+.produtos{
+    background-color: #ccc;    
+}
+.produtos h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.808);
+    font-size: 1.3em;
+    margin-left: 10%;
+    padding-top: 20px;
+    margin-bottom: 40px;
+    line-height: 2em;
+}
+.produtos strong{
+    text-transform: uppercase;
+    font-size: 1.6em;
+
+}
+.container{
+    margin-left: 15%;
+    height: 40px;
 }
 
