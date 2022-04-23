@@ -7,11 +7,14 @@
     margin: 0;
     padding: 0;
 }
+
 header{
+    width: 100%;
     display: flex;
     align-items: center; 
     border-bottom: 3px solid #ccc;   
     justify-content: space-between;
+    flex-wrap: wrap;
 
 }
 .logo img{
@@ -103,7 +106,96 @@ header{
 
 }
 .container{
-    margin-left: 15%;
-    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.oferta{
+    margin-top: 20px;
+    display: flex;
+    margin-left: 10%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#big{
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(58, 57, 57);
+}
+.oferta p{
+    width: 500px;
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 1.2em;   
+    font-family: Arial, Helvetica, sans-serif; 
+    color: rgb(100, 99, 99);
+}
+.oferta img{
+    width: 500px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.consignado{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: var(--cor2);
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 10%;
+    padding-bottom: 30px;
+    
+}
+.consignado img{
+    width: 500px;
+}
+.consignado p{
+    width: 500px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: white;    
+}
+.fgts{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: var(--cor01);
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 10%;
+    padding-bottom: 30px;
+}
+
+.fgts img{
+    width: 500px;
+}
+.fgts p{
+    width: 500px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: white;    
+}
+footer{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#F4F5F6 ;
+}
+footer img{
+    width: 200px;    
+}
+footer p{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    text-align: justify;
+    margin-top: 20px;
+    color: rgb(61, 61, 61);
 }
 
