@@ -11,6 +11,9 @@ html{
     background-color: #F4F5F6;
     font-family: Arial, Helvetica, sans-serif;
 }
+header a{
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 .hero{
     margin: auto;

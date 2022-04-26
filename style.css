@@ -17,6 +17,7 @@ body{
 main{
     width: 100%;
 }
+
 .menu-toggle{
     display: none;
     cursor: pointer;
