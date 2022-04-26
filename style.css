@@ -20,13 +20,24 @@ main{
 .menu-toggle{
     display: none;
     cursor: pointer;
+    width: 40px;
+    height: 30px;
+    margin-right: 40px;
+}
+.menu-toggle .l1{
+    background-color:var(--cor01) ;
+}
+.menu-toggle .l2 {
+    background-color: rgba(44, 44, 44, 0.76);
+}
+.menu-toggle .l3{
+    background-color: var(--cor2);
 }
 .menu-toggle .l1 , .l2, .l3{
-    background-color: black;
-    width: 50px;
+    width: 100%;
     height: 5px;
-    margin-top: 4px;
-    margin-right: 40px;
+    margin:6px auto;
+    transition-duration: 0.4s ;
     
 }
 
@@ -245,6 +256,50 @@ footer p{
     .menu-toggle{
         display: block;
     }
+    .menu-section.on{
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100vh;
+
+        z-index: 10;
+
+        background-color: var(--cor2);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu-section.on .menu-topo{
+        display: block;
+    }
+    .menu-section.on .menu-toggle{
+        position: absolute;
+        right: 0;
+        top: 15px;
+    }
+    .menu-section.on .menu-toggle .l1{
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+    .menu-section.on .menu-toggle .l2{
+        opacity: 0;
+    }
+    .menu-section.on .menu-toggle .l3{
+        transform: rotate(-45deg) translate(8px,-9px);
+    }
+    .menu-section.on nav ul{
+        text-align: center;
+        display: block;
+    }
+    .menu-section.on nav ul a{
+        transition-duration: 0.5s;
+        font-size: 3rem;
+        line-height: 4rem;
+        display: block;
+    }
+    
 }
 @media (max-width:680px) {
         
