@@ -7,8 +7,17 @@
     margin: 0;
     padding: 0;
 }
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
 
-header{
+main{
+    width: 100%;
+}
+header{    
     width: 100%;
     display: flex;
     align-items: center; 
@@ -36,7 +45,7 @@ header{
     padding: 30px;    
     color: black;
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 2rem;
     font-weight: 400;
     font-family: 'roboto';
     transition: .3s;
@@ -46,6 +55,7 @@ header{
     color: var(--cor01);
 }
 .banner{
+    position: relative;
     background-color: #ccc;
     background-image: url(img/banner-pq.jpg);
     background-size: cover;
@@ -60,7 +70,7 @@ header{
     position: absolute;
     bottom: 250px;
     margin-left: 10%;
-    font-size: 2em;
+    font-size: 3.5rem;
 }
 .button{
     padding: 8px 30px;
@@ -69,6 +79,7 @@ header{
     color: white;    
     margin-left: 15%;
     transition: .2s;
+    font-size: 1.6rem;
 }
 .button-verde{
     background-color: var(--cor01); 
@@ -80,7 +91,7 @@ header{
 .button-laranja{
     background-color: var(--cor2); 
     margin: 40px 5%;   
-    font-size: 1.2em;
+    font-size: 1.6rem;
 }
 .button-laranja:hover{
     background-color: #f0801fb0;
@@ -97,7 +108,7 @@ header{
 .produtos h2{
     font-family: Arial, Helvetica, sans-serif;
     color: rgba(0, 0, 0, 0.808);
-    font-size: 1.3em;
+    font-size: 2rem;
     margin-left: 10%;
     padding-top: 20px;
     margin-bottom: 40px;
@@ -113,50 +124,42 @@ header{
     justify-content: space-around;
     flex-wrap: wrap;
 }
-.oferta{
-    margin-top: 20px;
-    display: flex;
-    margin-left: 10%;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.oferta{ 
+    background-color: red;   
+   width: 100%;   
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+   padding:1% 0% 1% 0%
 }
-.oferta a{    
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
-    color: rgb(100, 99, 99);
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    transition: .6s;
+.oferta h4{    
+    font-size: 5rem;
+    width: 500px;
+    color:rgb(43, 43, 43);
+    margin-bottom: 20px;
 }
-.oferta a:hover{
-    text-decoration: underline;
-    background-color: var(--cor01);
-    color: white;
-}
-#big{
-    font-size: 3em;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color: rgb(58, 57, 57);
-}
+
 .oferta p{
     width: 500px;
+    color: rgb(85, 85, 85);    
     text-align: justify;
-    margin-top: 20px;
-    font-size: 1.2em;   
-    font-family: Arial, Helvetica, sans-serif; 
-    color: rgb(100, 99, 99);
-    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+.oferta .ico{
+    width: 40vw;   
+    
 }
 .oferta img{
-    width: 500px;
+    width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;    
 }
-
+.cards .consignado .ico{
+    width: 40vw;
+}
 .consignado{
     display: flex;
     justify-content: space-around;
@@ -164,12 +167,13 @@ header{
     background-color: var(--cor2);
     align-items: center;
     padding-top: 30px;
-    padding-left: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-bottom: 30px;
     
 }
 .consignado img{
-    width: 500px;
+    width: 100%;
 }
 .consignado p{
     width: 500px;
@@ -179,6 +183,9 @@ header{
     font-weight: bold;
     color: white;    
 }
+.cards .fgts .ico{
+    width: 40vw;
+}
 .fgts{
     display: flex;
     justify-content: space-around;
@@ -186,12 +193,13 @@ header{
     background-color: var(--cor01);
     align-items: center;
     padding-top: 30px;
-    padding-left: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-bottom: 30px;
 }
 
 .fgts img{
-    width: 500px;    
+    width: 100%;    
 }
 .fgts p{
     width: 500px;
@@ -217,5 +225,44 @@ footer p{
     text-align: justify;
     margin-top: 20px;
     color: rgb(61, 61, 61);
+}
+
+@media (max-width:680px) {
+    .menu-topo{
+        display: none;
+    }     
+    .oferta{
+        flex-direction: column;
+    }
+    .interna{
+        display: flex;
+        flex-direction: column; 
+        align-items: center;       
+    }
+    .interna h4{
+        width: 50%;
+        display: block;
+        font-size: 2rem;
+    }
+    .interna p{
+        width: 50%;
+        font-size: 1rem;
+    }
+    .cards{
+        font-size: 1rem;        
+    }
+    .consignado{
+        padding: 10px 10px;
+    }
+    .consignado img{
+        margin-bottom: 10px;
+    }
+
+    .fgts{
+        padding: 10px 10px;
+    }
+    .fgts img{
+        margin-top: 10px;
+    }
 }
 
