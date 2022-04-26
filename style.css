@@ -17,6 +17,15 @@ body{
 main{
     width: 100%;
 }
+.menu-toggle .l1 , .l2, .l3{
+    background-color: black;
+    width: 50px;
+    height: 5px;
+    margin-top: 4px;
+    margin-right: 40px;
+    display: none;
+}
+
 header{    
     width: 100%;
     display: flex;
@@ -124,8 +133,7 @@ header{
     justify-content: space-around;
     flex-wrap: wrap;
 }
-.oferta{ 
-    background-color: red;   
+.oferta{      
    width: 100%;   
    display: flex;
    flex-wrap: wrap;
@@ -226,11 +234,13 @@ footer p{
     margin-top: 20px;
     color: rgb(61, 61, 61);
 }
-
-@media (max-width:680px) {
+@media (max-width:860px){
     .menu-topo{
         display: none;
-    }     
+    }
+}
+@media (max-width:680px) {
+        
     .oferta{
         flex-direction: column;
     }
