@@ -38,10 +38,8 @@ main{
     width: 100%;
     height: 5px;
     margin:6px auto;
-    transition-duration: 0.4s ;
-    
+    transition-duration: 0.4s ;    
 }
-
 header{    
     width: 100%;
     display: flex;
@@ -49,7 +47,6 @@ header{
     border-bottom: 3px solid #ccc;   
     justify-content: space-between;
     flex-wrap: wrap;
-
 }
 .logo img{
     display: inline-block;
@@ -163,7 +160,6 @@ header{
     color:rgb(43, 43, 43);
     margin-bottom: 20px;
 }
-
 .oferta p{
     width: 500px;
     color: rgb(85, 85, 85);    
@@ -193,8 +189,7 @@ header{
     padding-top: 30px;
     padding-left: 5%;
     padding-right: 5%;
-    padding-bottom: 30px;
-    
+    padding-bottom: 30px;    
 }
 .consignado img{
     width: 100%;
@@ -221,7 +216,6 @@ header{
     padding-right: 5%;
     padding-bottom: 30px;
 }
-
 .fgts img{
     width: 100%;    
 }
@@ -249,6 +243,17 @@ footer p{
     text-align: justify;
     margin-top: 20px;
     color: rgb(61, 61, 61);
+}
+.wpp-logo{       
+    width: 7vw;
+    position: sticky;
+    right: 150px;
+    bottom: 100px;
+    transform: translateX(91vw);    
+    height: 0;  
+}
+.wpp-logo img{
+    width: 100%;    
 }
 @media (max-width:860px){
     .menu-topo{
