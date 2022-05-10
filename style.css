@@ -343,4 +343,9 @@ footer p{
         margin-top: 10px;
     }
 }
+@media (max-width: 315px){
+    .wpp-logo {
+        display: none;
+    }
+}
 
